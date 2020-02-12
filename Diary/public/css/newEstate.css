@@ -1,0 +1,55 @@
+.content {
+    border: 1px solid red;
+    margin: 100px 30px 100px 100px;
+    height: 1000px;
+    vertical-align: top;
+    font-size: 0;
+    font-family: "Impact","Yu Gothic","Meiryo","ヒラギノ角ゴ","sans-serif";
+}
+
+.estate {
+  border: 1px solid blue;
+  width: 50%;
+  height:300px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0;
+}
+
+.estate-img {
+ position: absolute;
+}
+
+.cover-content {
+  position: relative;
+  float:right;
+  width: 40%;
+}
+
+
+.estate-bg1 {
+  background-color: white;
+  padding: 15px 10px 0px 10px;
+  height: 300px;
+  width:100%;
+
+}
+
+.estate-text {
+  color: gray;
+  font-size: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+.estate-text p {
+  font-size: 15px;
+}
+
+.estate-bg2 {
+  background-color: blue;
+  opacity: 0.7;
+  height: 300px;
+  width: 40%;
+  float:right;
+}

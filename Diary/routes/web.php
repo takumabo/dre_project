@@ -12,3 +12,4 @@
 */
 
 Route::get('/', 'DiaryController@home')->name('home');
+Route::get('/newestate','DiaryCOntroller@newestate')->name('newestate');

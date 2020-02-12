@@ -10,4 +10,9 @@ class DiaryController extends Controller
     {
         return view('home');
     }
+
+    public function newestate ()
+    {
+        return view('newestate');
+    }
 }
