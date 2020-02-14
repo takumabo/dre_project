@@ -36,6 +36,8 @@
     <!-- ドロワーメニュー -->
 
     <footer>
+      <!-- ↓body閉じタグ直前でjQueryを読み込む -->
+      <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="js/layout.js"></script>
     </footer>
 </body>

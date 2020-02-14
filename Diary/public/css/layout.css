@@ -9,14 +9,20 @@ strong {
   font-weight: 600;
 }
 
+body {
+  height: 100vh;
+  overflow-y: hidden;
+}
 .page {
   width: 100%;
   height: 70px;
   background: #fdfdfd;
-  font-family: 'future', sans-serif;
-  font-weight: 600;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 200px;
+  font-weight: bold;
   letter-spacing: .03em;
   color: #212121;
+  z-index: 300px;
 }
 
 header {
@@ -140,7 +146,6 @@ main small {
   transform: translateX(-100%);
   transition: transform .3s;
   will-change: transform;
-  contain: paint;
 }
 
 #nav-content ul {
@@ -226,3 +231,167 @@ img {
   width: 100%;
 }
 /*ドロワーメニュー*/
+
+/* モーダルCSS */
+.modalArea {
+  display: none;
+  position: fixed;
+  z-index: 10; /*サイトによってここの数値は調整 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modalBg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30,30,30,0.9);
+}
+
+.modalWrapper {
+  position: relative;
+  height: 100vh;
+  vertical-align: top;
+  transform:translate(0%,-100%);
+  margin-left: 1%;
+  width: 99%;
+  min-height: 95%;
+  padding: 30px 30px 10px;
+  background-color: #fff;
+  overflow : auto;
+}
+.modal-img {
+  display: inline-block;
+  width:60%;
+  vertical-align: top;
+}
+.modal-img img  {
+  width:100%;
+  height:400px;
+  object-fit: cover;
+}
+
+.modal-map {
+  display: inline-block;
+  width: 39%;
+  margin-top: 100px;
+}
+.modal-map iframe {
+  width: 100%;
+  height: 300px;
+}
+
+.modal-text {
+  vertical-align: top;
+  font-family: "Bebas Neue","Yu Gothic","Meiryo","ヒラギノ角ゴ","sans-serif";
+  display: inline-block;
+  width: 60%;
+  margin-top: 50px;
+}
+.modal-text h1 {
+  font-size: 70px;
+  display: inline-block;
+  color: #333333;
+  margin-right: 30px;
+}
+.modal-text h2 {
+  font-size: 40px;
+  display: inline-block;
+  color: #333333;
+}
+
+.modal-text p {
+  margin-top:50px;
+  color:#333333;
+  margin-bottom: 50px;
+}
+
+.modal-detail {
+  width:39%;
+  background-color: #DCE3F1;
+  padding: 30px;
+  height: auto;
+  display: inline-block;
+}
+
+.modal-detail h2 {
+  text-align: center;
+  color: #0B41A0;
+}
+
+.detail-content {
+  margin-top: 30px;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table tr{
+  border-bottom: solid 2px white;
+}
+
+table tr:last-child{
+  border-bottom: none;
+}
+
+table th{
+  position: relative;
+  text-align: left;
+  width: 30%;
+  background-color: #0B41A0;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+table th:after{
+  display: block;
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top:calc(50% - 10px);
+  right:-10px;
+  border-left: 10px solid #0B41A0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+table td{
+  text-align: left;
+  width: 70%;
+  text-align: center;
+  background-color: #eee;
+  padding: 10px 20px;
+  text-align: left;
+}
+
+
+.modal-youtube iframe {
+  margin-top: 30px;
+  border: 2px solid #0B41A0;
+  height: 100px;
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+  float: center;
+  width: 100%;
+  height: 400px;
+}
+
+.closeModal {
+  display: inline-block;
+  top: 0px;
+  cursor: pointer;
+  color: #0B41A0;
+  margin-right: 20px;
+  font-size: 50px;
+  top: 3%;
+  left: 95%;
+  position:fixed;
+}
+
+

@@ -1,44 +1,47 @@
 .content {
-    border: 1px solid red;
     margin: 100px 30px 100px 100px;
     height: 1000px;
     vertical-align: top;
     font-size: 0;
-    font-family: "Impact","Yu Gothic","Meiryo","ヒラギノ角ゴ","sans-serif";
+    font-family: "Bebas Neue","Yu Gothic","Meiryo","ヒラギノ角ゴ","sans-serif";
 }
 
-.estate {
-  border: 1px solid blue;
-  width: 50%;
+
+.estate1 {
+  border: 1px solid gray;
+  width: 49%;
   height:300px;
   display: inline-block;
   vertical-align: top;
   font-size: 0;
 }
 
-.estate-img {
- position: absolute;
+.estate-img1 {
+ overflow: hidden;
+ width:60%;  /*画像の幅*/
+ height: 300px;  /*画像の高さ*/
+ display: inline-block;
 }
 
-.cover-content {
-  position: relative;
-  float:right;
-  width: 40%;
+.estate-img1 img {
+ width : 100%;
+ height: 300px;
+ transition-duration: 0.3s; /*変化に掛かる時間*/
+}
+
+.estate-img1 img:hover {
+  opacity: 0.7;
+  transform: scale(1.1);  /*画像の拡大率*/
+  transition-duration: 0.3s;  /*変化に掛かる時間*/
+  z-index: -1;
 }
 
 
-.estate-bg1 {
-  background-color: white;
-  padding: 15px 10px 0px 10px;
-  height: 300px;
-  width:100%;
 
-}
 
 .estate-text {
-  color: gray;
+  color: black;
   font-size: 30px;
-  position: relative;
   display: inline-block;
 }
 
@@ -47,7 +50,8 @@
 }
 
 .estate-bg2 {
-  background-color: blue;
+  background-color: white;
+  padding: 15px 10px 0px 10px;
   opacity: 0.7;
   height: 300px;
   width: 40%;
