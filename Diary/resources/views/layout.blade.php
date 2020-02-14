@@ -11,7 +11,7 @@
 <body>
  <!-- ドロワーメニュー -->
     <div class="page">
-      <a href="{{ route('home') }}"><header tabindex="0">Da Nang Real Estate Service</header></a>
+      <header tabindex="0"><a href="{{ route('home') }}">Da Nang Real Estate Service</a></header>
           <div id="nav-container">
             <div class="bg"></div>
             <div class="button" tabindex="0">
@@ -22,7 +22,7 @@
             <div id="nav-content" tabindex="0">
               <ul>
                 <li><a href="{{ route('newestate') }}">最新物件を見る</a></li>
-                <li><a href="#0">ロケーションで見る</a></li>
+                <li><a href="{{ route('location') }}">ロケーションで見る</a></li>
                 <li><a href="#0">物件価格で見る</a></li>
                 <li><a href="#0">ダナンフードロケーション</a></li>
                 <li><a href="#0">ダナン観光スポット</a></li>

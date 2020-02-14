@@ -15,4 +15,9 @@ class DiaryController extends Controller
     {
         return view('newestate');
     }
+
+    public function location ()
+    {
+        return view('location');
+    }
 }

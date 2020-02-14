@@ -13,13 +13,13 @@
 @section('content')
     <div class="top-wrapper">
         <div class="webcontent">
-            <a href="{{ route('home') }}">
+            <a href="{{ route('newestate') }}">
                 <div class="font_awesome"><i class="far fa-building"></i></div>
                 <p>最新物件を見る</p>
             </a>
         </div>
         <div class="webcontent">
-            <a href="#">
+            <a href="{{ route('location') }}">
                 <div class="font_awesome"><i class="fas fa-map-marked-alt"></i></div>
                 <p>ロケーションで見る</p>
             </a>

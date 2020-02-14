@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('title')
-ダナン不動産紹介アプリ
+ダナン不動産紹介アプリ(最新物件)
 @endsection
 
 <head>

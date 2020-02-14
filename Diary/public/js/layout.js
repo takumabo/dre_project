@@ -18,8 +18,8 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
   function onYouTubeIframeAPIReady() {
   player = new YT.Player("player",{
   events: {
-        'onReady': onPlayerReady,//API呼び出しの受信を開始する準備ができると起動
-        'onStateChange': onPlayerStateChange// プレーヤーの状態が変わると起動
+        'onClick': onPlayerReady,//API呼び出しの受信を開始する準備ができると起動
+        // 'onStateChange': onPlayerStateChange// プレーヤーの状態が変わると起動
       }
   });
   }
@@ -28,7 +28,7 @@ function onPlayerReady(event) {
 event.target.playVideo();
 }
 
-//関数（以下は再生後○秒で止まる仕組み）
+// 関数（以下は再生後○秒で止まる仕組み）
 // var done = false;
 // function onPlayerStateChange(event) {console.log(3);
 // if (event.data == YT.PlayerState.PLAYING && !done) {
