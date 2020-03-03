@@ -25,7 +25,7 @@
             </a>
         </div>
         <div class="webcontent">
-            <a href="#">
+            <a href="{{ route('price') }}">
                 <div class="font_awesome"><i class="fas fa-money-check-alt"></i></div>
                 <p>物件価格で見る</p>
             </a>

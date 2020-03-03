@@ -1,11 +1,19 @@
 $(function () {
-  $('#openModal').click(function(){
-      $('#modalArea').fadeIn();
-  });
-  $('#closeModal , #modalBg').click(function(){
-    $('#modalArea').fadeOut();
-  });
-});
+  $('.modal-open').click(function(){
+      var modal = '#' + $(this).attr('data-target');
+      $(modal).fadeIn();
+      console.log(modal);
+
+        $('#closeModal , #modalBg').click(function(){
+      $('.modalArea').fadeOut();
+      });
+
+    });
+   });
+
+
+
+
 
 
 //api用のJSを読み込む
@@ -26,7 +34,7 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 //関数
 function onPlayerReady(event) {
 event.target.playVideo();
-}
+};
 
 // 関数（以下は再生後○秒で止まる仕組み）
 // var done = false;

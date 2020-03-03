@@ -288,6 +288,7 @@ img {
   display: inline-block;
   width: 60%;
   margin-top: 50px;
+  font-size: 15px;
 }
 .modal-text h1 {
   font-size: 70px;
@@ -393,5 +394,8 @@ table td{
   left: 95%;
   position:fixed;
 }
+
+
+
 
 

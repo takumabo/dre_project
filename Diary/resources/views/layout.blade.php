@@ -23,9 +23,10 @@
               <ul>
                 <li><a href="{{ route('newestate') }}">最新物件を見る</a></li>
                 <li><a href="{{ route('location') }}">ロケーションで見る</a></li>
-                <li><a href="#0">物件価格で見る</a></li>
+                <li><a href="{{ route('price') }}">物件価格で見る</a></li>
                 <li><a href="#0">ダナンフードロケーション</a></li>
                 <li><a href="#0">ダナン観光スポット</a></li>
+                <li><a href="{{ route('newpost') }}">新規投稿する</a></li>
                 <li class="small"><a href="#0">Facebook</a><a href="#0">Instagram</a></li>
               </ul>
             </div>

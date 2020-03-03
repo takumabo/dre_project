@@ -14,3 +14,6 @@
 Route::get('/', 'DiaryController@home')->name('home');
 Route::get('/newestate','DiaryController@newestate')->name('newestate');
 Route::get('/location','DiaryController@location')->name('location');
+Route::get('/price','DiaryController@price')->name('price');
+Route::get('/newpost','DiaryController@newpost')->name('newpost');
+Route::post('/newpost','DiaryController@store')->name('store'); //保存処理
